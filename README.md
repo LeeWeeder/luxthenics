@@ -1,1 +1,3 @@
 # luxthenics
+
+Personal workout app.
