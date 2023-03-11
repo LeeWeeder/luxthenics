@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>LuxThenics</title>
@@ -7,12 +8,502 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
     <link rel="manifest" href="icons/site.webmanifest">
     <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="icons/favicon.ico">
+    <script src="app.js" defer></script>
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-config" content="icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    
+    <div class="luxthenics-logo-container-home">
+        <img id="luxthenics-logo-white" src="assets/logo/luxthenics-logo-white.png" alt="LuxThenics logo">
+    </div>
+
+    <div class="workouts-container">
+        <div class="card workout" id="straight-arm">
+            <div class="workout-title">
+                <h5>WORKOUT</h5>
+                <h2>Straight arm</h2>
+                <img src="assets/logo/icon.png" alt="LuxThenics logo">
+            </div>
+            <hr>
+            <button class="start-btn">
+                <img src="components/icons/round_play_arrow_white.png" alt="Play button">
+                <p>Start workout</p>
+            </button>
+            <div class="workout-preview">
+                <div class="pair one">
+                <div class="card exercise" id="planche">
+                    <div class="exercise-group">
+                        A1
+                    </div>
+                    <div class="exercise-info">
+                        <h5>PLANCHE PROGRESSION</h5>
+                        <p>Tuck Planche</p>
+                    </div>
+                    <div class="border">
+                    <div class="level">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number" id="planche-level">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg width="50px" height="50px">
+                            <defs>
+                                <linearGradient id="gradient-color">
+
+                                    <stop offset="0%" stop-color="#00194B" />
+
+                                    <stop offset="100%" stop-color="#FF6F1D" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle cx="22" cy="22" r="19" stroke-linecap="round" stroke="url(#gradient-color)"/>
+                        </svg>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card exercise" id="front-lever">
+                    <div class="exercise-group">
+                        A2
+                    </div>
+                    <div class="exercise-info">
+                        <h5>FRONT LEVER PROGRESSION</h5>
+                        <p>Advanced Tuck Front Lever</p>
+                    </div>
+                    <div class="border">
+                    <div class="level">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number" id="planche-level">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg width="50px" height="50px">
+                            <defs>
+                                <linearGradient id="gradient-color">
+
+                                    <stop offset="0%" stop-color="#00194B" />
+
+                                    <stop offset="100%" stop-color="#FF6F1D" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle cx="22" cy="22" r="19" stroke-linecap="round" stroke="url(#gradient-color)"/>
+                        </svg>
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+
+                <hr>
+
+                <div class="pair two">
+                <div class="card exercise" id="easier-planche">
+                    <div class="exercise-group">
+                        B1
+                    </div>
+                    <div class="exercise-info">
+                        <h5>EASIER PLANCHE PROGRESSION</h5>
+                        <p>Pseudo Planche Lean</p>
+                    </div>
+                    <div class="border">
+                    <div class="level">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number" id="planche-level">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg width="50px" height="50px">
+                            <defs>
+                                <linearGradient id="gradient-color">
+
+                                    <stop offset="0%" stop-color="#00194B" />
+
+                                    <stop offset="100%" stop-color="#FF6F1D" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle cx="22" cy="22" r="19" stroke-linecap="round" stroke="url(#gradient-color)"/>
+                        </svg>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card exercise" id="easier-front-lever">
+                    <div class="exercise-group">
+                        B2
+                    </div>
+                    <div class="exercise-info">
+                        <h5>EASIER FRONT LEVER PROGRESSION</h5>
+                        <p>Tuck Front Lever</p>
+                    </div>
+                    <div class="border">
+                    <div class="level">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number" id="planche-level">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg width="50px" height="50px">
+                            <defs>
+                                <linearGradient id="gradient-color">
+
+                                    <stop offset="0%" stop-color="#00194B" />
+
+                                    <stop offset="100%" stop-color="#FF6F1D" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle cx="22" cy="22" r="19" stroke-linecap="round" stroke="url(#gradient-color)"/>
+                        </svg>
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card workout" id="straight-arm">
+            <div class="workout-title">
+                <h5>WORKOUT</h5>
+                <h2>Bent arm</h2>
+                <img src="assets/logo/icon.png" alt="LuxThenics logo">
+            </div>
+            <hr>
+            <button class="start-btn">
+                <img src="components/icons/round_play_arrow_white.png" alt="Play button">
+                <p>Start workout</p>
+            </button>
+            <div class="workout-preview">
+                <div class="pair one">
+                <div class="card exercise" id="planche">
+                    <div class="exercise-group">
+                        A1
+                    </div>
+                    <div class="exercise-info">
+                        <h5>HANDSTAND PUSH-UP PROGRESSION</h5>
+                        <p>Pike Push-up</p>
+                    </div>
+                    <div class="border">
+                    <div class="level">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number" id="planche-level">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg width="50px" height="50px">
+                            <defs>
+                                <linearGradient id="gradient-color">
+
+                                    <stop offset="0%" stop-color="#00194B" />
+
+                                    <stop offset="100%" stop-color="#FF6F1D" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle cx="22" cy="22" r="19" stroke-linecap="round" stroke="url(#gradient-color)"/>
+                        </svg>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card exercise" id="front-lever">
+                    <div class="exercise-group">
+                        A2
+                    </div>
+                    <div class="exercise-info">
+                        <h5>ONE ARM PULL-UP PROGRESSION</h5>
+                        <p>Pull-up</p>
+                    </div>
+                    <div class="border">
+                    <div class="level">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number" id="planche-level">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg width="50px" height="50px">
+                            <defs>
+                                <linearGradient id="gradient-color">
+
+                                    <stop offset="0%" stop-color="#00194B" />
+
+                                    <stop offset="100%" stop-color="#FF6F1D" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle cx="22" cy="22" r="19" stroke-linecap="round" stroke="url(#gradient-color)"/>
+                        </svg>
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+
+                <hr>
+
+                <div class="pair two">
+                <div class="card exercise" id="easier-planche">
+                    <div class="exercise-group">
+                        B1
+                    </div>
+                    <div class="exercise-info">
+                        <h5>FRONT LEVER ROW PROGRESSION</h5>
+                        <p>Tuck Front Lever Row</p>
+                    </div>
+                    <div class="border">
+                    <div class="level">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number" id="planche-level">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg width="50px" height="50px">
+                            <defs>
+                                <linearGradient id="gradient-color">
+
+                                    <stop offset="0%" stop-color="#00194B" />
+
+                                    <stop offset="100%" stop-color="#FF6F1D" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle cx="22" cy="22" r="19" stroke-linecap="round" stroke="url(#gradient-color)"/>
+                        </svg>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card exercise" id="easier-front-lever">
+                    <div class="exercise-group">
+                        B2
+                    </div>
+                    <div class="exercise-info">
+                        <h5>PLANCHE PUSH-UP PROGRESSION</h5>
+                        <p>Pseudo Planche Push-up</p>
+                    </div>
+                    <div class="border">
+                    <div class="level">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number" id="planche-level">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg width="50px" height="50px">
+                            <defs>
+                                <linearGradient id="gradient-color">
+
+                                    <stop offset="0%" stop-color="#00194B" />
+
+                                    <stop offset="100%" stop-color="#FF6F1D" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle cx="22" cy="22" r="19" stroke-linecap="round" stroke="url(#gradient-color)"/>
+                        </svg>
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card workout" id="straight-arm">
+            <div class="workout-title">
+                <h5>WORKOUT</h5>
+                <h2>Legs</h2>
+                <img src="assets/logo/icon.png" alt="LuxThenics logo">
+            </div>
+            <hr>
+            <button class="start-btn">
+                <img src="components/icons/round_play_arrow_white.png" alt="Play button">
+                <p>Start workout</p>
+            </button>
+            <div class="workout-preview">
+                <div class="pair one">
+                <div class="card exercise" id="planche">
+                    <div class="exercise-group">
+                        A1
+                    </div>
+                    <div class="exercise-info">
+                        <h5></h5>
+                        <p>Pistol Squat</p>
+                    </div>
+                    <div class="border">
+                    <div class="level">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number" id="planche-level">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg width="50px" height="50px">
+                            <defs>
+                                <linearGradient id="gradient-color">
+
+                                    <stop offset="0%" stop-color="#00194B" />
+
+                                    <stop offset="100%" stop-color="#FF6F1D" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle cx="22" cy="22" r="19" stroke-linecap="round" stroke="url(#gradient-color)"/>
+                        </svg>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card exercise" id="front-lever">
+                    <div class="exercise-group">
+                        A2
+                    </div>
+                    <div class="exercise-info">
+                        <h5>NORDIC CURL PROGRESSION</h5>
+                        <p>90&deg; Nordic Curl</p>
+                    </div>
+                    <div class="border">
+                    <div class="level">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number" id="planche-level">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg width="50px" height="50px">
+                            <defs>
+                                <linearGradient id="gradient-color">
+
+                                    <stop offset="0%" stop-color="#00194B" />
+
+                                    <stop offset="100%" stop-color="#FF6F1D" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle cx="22" cy="22" r="19" stroke-linecap="round" stroke="url(#gradient-color)"/>
+                        </svg>
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+
+                <hr>
+
+                <div class="pair two">
+                <div class="card exercise" id="easier-planche">
+                    <div class="exercise-group">
+                        B1
+                    </div>
+                    <div class="exercise-info">
+                        <h5></h5>
+                        <p>Bulgarian Split Squat</p>
+                    </div>
+                    <div class="border">
+                    <div class="level">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number" id="planche-level">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg width="50px" height="50px">
+                            <defs>
+                                <linearGradient id="gradient-color">
+
+                                    <stop offset="0%" stop-color="#00194B" />
+
+                                    <stop offset="100%" stop-color="#FF6F1D" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle cx="22" cy="22" r="19" stroke-linecap="round" stroke="url(#gradient-color)"/>
+                        </svg>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card exercise" id="easier-front-lever">
+                    <div class="exercise-group">
+                        B2
+                    </div>
+                    <div class="exercise-info">
+                        <h5></h5>
+                        <p>Single Leg Calf Raises</p>
+                    </div>
+                    <div class="border">
+                    <div class="level">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number" id="planche-level">
+                                    1
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg width="50px" height="50px">
+                            <defs>
+                                <linearGradient id="gradient-color">
+
+                                    <stop offset="0%" stop-color="#00194B" />
+
+                                    <stop offset="100%" stop-color="#FF6F1D" />
+
+                                </linearGradient>
+                            </defs>
+                            <circle cx="22" cy="22" r="19" stroke-linecap="round" stroke="url(#gradient-color)"/>
+                        </svg>
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root {
+    --blue: #00194B;
+    --orange:  #FF6F1D;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: linear-gradient(to right, #FF6F1D, var(--blue));
+}
+
+@media (max-width: 1069px) {
+    body {
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.luxthenics-logo-container-home {
+    margin: 25px auto;
+    height: 50px;
+}
+
+#luxthenics-logo-white {
+    height: 100%;
+}
+
+.workouts-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+    transition: .2s;
+}
+
+@media (hover: hover) {
+    .card:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    .workout:hover {
+        transform: translateY(-20px);
+        width: 360px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 20px 20px rgba(0,0,0,0.23);
+    }
+
+    .workout:hover button {
+        width: 140px;
+    }
+
+    .workout:hover button p {
+        max-width: 7rem;
+    }
+
+    .workout:hover button img {
+        transform: rotate(-240deg);
+    }
+
+    button:hover {
+        background-color: var(--blue);
+        color: white;
+        border: none;
+    }
+
+    button:hover img {
+        filter: none;
+    }
+}
+
+.workout {
+    flex-direction: column;
+    width: 350px;
+    margin-top: 50px;
+    background-color: white;
+    transition: .3s;
+    position: relative;
+}
+
+.workout-title {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    position: relative;
+}
+
+.workout-title img {
+    width: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.workout-title h5 {
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.workout-title h2 {
+    font-size: 36px;
+}
+
+.workout-preview {
+    display: flex;
+    padding: 20px;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.exercise {
+    padding: 2px;
+    height: 50px;
+    border-radius: 25px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.exercise:hover {
+    box-shadow: none;
+}
+
+.exercise-group {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 2px;
+    font-size: .8rem;
+}
+
+.one .exercise-group {
+    background-color: var(--blue);
+}
+
+.two .exercise-group {
+    background-color: var(--orange);
+}
+
+.exercise-info {
+    margin: 8px;
+}
+
+.exercise-info h5 {
+    font-size: 8px;
+}
+
+.exercise-info p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.border {
+    margin-left: auto;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.level {
+    width: 44px;
+    height: 44px;
+    position: relative;
+}
+
+.outer {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), 0 0 10px -1px rgba(255,255,255,.7);
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255,255,255,.7), -.5px -.5px 0 rgba(255,255,255,1), .5px .5px 0 rgba(0,0,0,.15), 0 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.number {
+    font-weight: bold;
+}
+
+circle {
+    fill: none;
+    stroke-width: 5px;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pair {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+button {
+    height: 40px;
+    position: absolute;
+    right: 25px;
+    top: 88px;
+    border: 2px solid var(--blue);
+    background-color: white;
+    color: black;
+    border-radius: 18px;
+    width: 48px;
+    transition: all .2s, border 0s, width .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 10px 16px 10px;
+}
+
+button:active {
+    background-color: #5572a8;
+}
+
+button img {
+    filter: invert();
+    transition: 0.5s;
+}
+
+button p {
+    max-width: 0;
+    transition: max-width 0.5s;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media (hover: none) {
+    button p {
+        max-width: 7rem;
+    }
+
+    button {
+        background-color: #00194B;
+        color: white;
+    }
+
+    button img {
+        filter: none;
+    }
+}
